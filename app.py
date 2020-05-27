@@ -2,7 +2,7 @@
 from flask import Flask, render_template, request, url_for, send_from_directory
 import speak
 
-app = Flask(__name__, static_folder="/build/static", template_folder="/build")
+app = Flask(__name__, static_folder="./build/static", template_folder="./build")
 @app.route("/", methods=["GET","POST"])
 def index():
     return render_template("index.html")
