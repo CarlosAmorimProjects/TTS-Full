@@ -12,7 +12,7 @@ import laptop from "../../images/backgroundgif.gif";
 export default function Text () {
 
     const [text, setText] = useState("");
-    const [lang, setLang] = useState("");
+    const [lang, setLang] = useState("en");
     const [audio, setAudio] = useState("");
 
     const alert = useAlert()

@@ -15,3 +15,8 @@ def delete_all_tts_files (limit=50):
        if len(files)>limit:
            for file in files:  
              os.remove(file)
+
+def remove_pontuation (text):
+        res_text = str.replace('?','')
+        return res_text
+        
