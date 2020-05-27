@@ -11,7 +11,7 @@ def index():
 def text(text,lang):
     if request.method == "GET":
        mp3_path=speak.get_speak(text,lang)
-       return url_for('static', filename=mp3_path.replace('/build/static', ''))
+       return url_for('static', filename=mp3_path.replace('build/static', ''))
 
 if __name__ == "__main__":
     app.run()
