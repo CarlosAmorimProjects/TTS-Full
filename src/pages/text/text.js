@@ -95,6 +95,22 @@ export default function Text () {
           <option value='no'>Norwegian</option>
           <option value='pl'>Polish</option>
           <option value='pt'>Portuguese</option>
+          <option value='ro'>Romanian</option> 
+          <option value='ru'>Russian</option> 
+          <option value='sr'>Serbian</option>
+          <option value='si'>Sinhala</option>
+          <option value='sk'>Slovak</option>
+          <option value='es'>Spanish</option>
+          <option value='es-es'>Spanish (Spain)</option> 
+          <option value='es-us'>Spanish (United States)</option>
+          <option value= 'sw'>Swahili</option>
+          <option value='sv'>Swedish</option>
+          <option value='ta'>Tamil</option>
+          <option value='th'>Thai</option>
+          <option value='tr'>Turkish</option>
+          <option value='uk'>Ukrainian</option>
+          <option value='vi'>Vietnamese</option>
+          <option value='cy'>Welsh</option>
         </select>
 
         <Button variant="warning" size="sm" type="submit" className="button" >Translate</Button>

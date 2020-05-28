@@ -2,6 +2,7 @@
 import uuid
 import os
 import glob
+import re
 
 def random_tts_filename ():
     filetext = str(uuid.uuid4())
@@ -17,6 +18,6 @@ def delete_all_tts_files (limit=50):
              os.remove(file)
 
 def remove_pontuation (text):
-        res_text_2 = text.replace('!','')
-        return res_text_2
+        text_clean = re.sub('\!', '', text)
+        return text_clean
         
