@@ -17,7 +17,6 @@ export default function Text () {
 
     const alert = useAlert()
 
-    text = text.replace('?', '');
 
   async function handleNewTranslation(e) {
       e.preventDefault();
