@@ -27,6 +27,8 @@ export default function Text () {
         return null;
        }
 
+       setText(text.replace('?',''));
+
       const url = "/text/"+text+"/"+lang;
 
       api.get(url)
