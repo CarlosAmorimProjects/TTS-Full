@@ -18,6 +18,6 @@ def delete_all_tts_files (limit=50):
              os.remove(file)
 
 def remove_pontuation (text):
-        text_clean = re.sub('\!', '', text)
+        text_clean = re.sub('\!|\?', '', text)
         return text_clean
         
