@@ -27,7 +27,7 @@ export default function Text () {
         return null;
        }
 
-       setText = text.replace('?','');
+       setText(text.replace('?',''))
 
       const url = "/text/"+text+"/"+lang;
 
