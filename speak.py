@@ -9,4 +9,3 @@ def get_speak (text, lang):
     tts = gTTS(text=text, lang=lang, slow=False)
     tts.save(filename)
     return filename
-
