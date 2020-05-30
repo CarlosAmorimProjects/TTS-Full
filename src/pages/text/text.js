@@ -85,7 +85,7 @@ export default function Text ()  {
         return null;
        }
 
-      const url = "/text/"+text+"/"+lang;
+       const url = "/text/"+encodeURIComponent(text)+"/"+lang;
 
       api.get(url)
       .then((response) => {
