@@ -8,12 +8,70 @@ import "./styles.css";
 
 import laptop from "../../images/backgroundgif.gif";
 
+    let languages = [
+        {id: 'af', name:'Afrikaans'},
+        {id: 'sq', name:'Albanian'},
+        {id: 'ar', name:'Arabic'},
+        {id: 'hy', name:'Armenian'}, 
+        {id: 'bn', name:'Bengali'},
+        {id: 'ca', name:'Catalan'},
+        {id: 'hr', name:'Croatian'},
+        {id: 'cs', name:'Czech'},
+        {id: 'da', name:'Danish'},
+        {id: 'nl', name:'Dutch'},
+        {id: 'en', name:'English'}, 
+        {id: 'en-au', name:'English (Australia)'},
+        {id: 'en-uk', name:'English (United Kingdom)'},
+        {id: 'en-us', name:'English (United States)'},
+        {id: 'eo', name:'Esperanto'},
+        {id: 'fi', name:'Finnish'},
+        {id: 'fr', name:'French'},
+        {id: 'de', name:'German'},
+        {id: 'el', name:'Greek'},
+        {id: 'hi', name:'Hindi'},
+        {id: 'hu', name:'Hungarian'},
+        {id: 'is', name:'Icelandic'},
+        {id: 'id', name:'Indonesian'},
+        {id: 'it', name:'Italian'},
+        {id: 'ja', name:'Japanese'},
+        {id: 'km', name:'Khmer (Cambodian)'},
+        {id: 'ko', name:'Korean'},
+        {id: 'la', name:'Latin'},
+        {id: 'lv', name:'Latvian'}, 
+        {id: 'mk', name:'Macedonian'},
+        {id: 'no', name:'Norwegian'},
+        {id: 'pl', name:'Polish'},
+        {id: 'pt', name:'Portuguese'},
+        {id: 'ro', name:'Romanian'},
+        {id: 'ru', name:'Russian'},
+        {id: 'sr', name:'Serbian'},
+        {id: 'si', name:'Sinhala'},
+        {id: 'sk', name:'Slovak'},
+        {id: 'es', name:'Spanish'},
+        {id: 'es-es', name:'Spanish (Spain)' },
+        {id: 'es-us', name:'Spanish (United States)'},
+        {id: 'sw', name:'Swahili'},
+        {id: 'sv', name:'Swedish'},
+        {id: 'ta', name:'Tamil'},
+        {id: 'th', name:'Thai'},
+        {id: 'tr', name:'Turkish'},
+        {id: 'uk', name:'Ukrainian'}, 
+        {id: 'vi', name:'Vietnamese'},
+        {id: 'cy', name:'Welsh'},
+      ]
+      
 
-export default function Text () {
+export default function Text ()  {
 
     const [text, setText] = useState("");
-    const [lang, setLang] = useState("en");
+    const [lang, setLang] = useState("");
     const [audio, setAudio] = useState("");
+    
+    let languagesList = languages.length > 0 && languages.map ((item => {
+      return (
+        <option value={item.id}>{item.name}</option>
+      )
+    }))
 
     const alert = useAlert()
 
@@ -27,7 +85,7 @@ export default function Text () {
         return null;
        }
 
-      const url = "/text/"+encodeURIComponent(text)+"/"+lang;
+      const url = "/text/"+text+"/"+lang;
 
       api.get(url)
       .then((response) => {
@@ -62,55 +120,7 @@ export default function Text () {
           value={lang}
           onChange={e => setLang(e.target.value)}
           >
-          <option value='af'>Afrikaans</option>
-          <option value='sq'>Albanian</option>
-          <option value='ar'>Arabic</option>
-          <option value='hy'>Armenian</option>
-          <option value='bn'>Bengali</option> 
-          <option value='ca'>Catalan</option>
-          <option value='hr'>Croatian</option>
-          <option value='cs'>Czech</option>
-          <option value='da'>Danish</option>
-          <option value='nl'>Dutch</option>
-          <option value='en'>English</option>
-          <option value='en-au'>English (Australia)</option>
-          <option value='en-uk'>English (United Kingdom)</option>
-          <option value='en-us'>English (United States)</option>
-          <option value='eo'>Esperanto</option>
-          <option value='fi'>Finnish</option>
-          <option value='fr'>French</option>
-          <option value='de'>German</option>
-          <option value='el'>Greek</option>
-          <option value='hi'>Hindi</option>
-          <option value='hu'>Hungarian</option>
-          <option value='is'>Icelandic</option>
-          <option value='id'>Indonesian</option>
-          <option value='it'>Italian</option>
-          <option value='ja'>Japanese</option>
-          <option value='km'>Khmer (Cambodian)</option>
-          <option value='ko'>Korean</option>
-          <option value='la'>Latin</option>
-          <option value='lv'>Latvian</option>
-          <option value='mk'>Macedonian</option>
-          <option value='no'>Norwegian</option>
-          <option value='pl'>Polish</option>
-          <option value='pt'>Portuguese</option>
-          <option value='ro'>Romanian</option> 
-          <option value='ru'>Russian</option> 
-          <option value='sr'>Serbian</option>
-          <option value='si'>Sinhala</option>
-          <option value='sk'>Slovak</option>
-          <option value='es'>Spanish</option>
-          <option value='es-es'>Spanish (Spain)</option> 
-          <option value='es-us'>Spanish (United States)</option>
-          <option value= 'sw'>Swahili</option>
-          <option value='sv'>Swedish</option>
-          <option value='ta'>Tamil</option>
-          <option value='th'>Thai</option>
-          <option value='tr'>Turkish</option>
-          <option value='uk'>Ukrainian</option>
-          <option value='vi'>Vietnamese</option>
-          <option value='cy'>Welsh</option>
+          {languagesList}
         </select>
 
         <Button variant="warning" size="sm" type="submit" className="button" >Translate</Button>
