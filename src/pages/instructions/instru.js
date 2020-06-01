@@ -19,6 +19,12 @@ export default function Instru () {
           <h3>5. Download the audio file <span aria-label="a rocket blasting off" role="img"> 📥</span> </h3>
         </div>
 
+        <div className="contact">
+          <h4>
+          <a href="https://portfolio.carlosamorimprojects.now.sh/" rel="noreferrer noopener" target="_blank">Contact us</a>
+          </h4>
+        </div>
+
         <div className="links">
           <Link to="/">
               <h2><span aria-label="a rocket blasting off" role="img"> ↩</span>Home</h2>
