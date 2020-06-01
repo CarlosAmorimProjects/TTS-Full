@@ -1,13 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
-.links h2{
-    text-align: center;
-    font-family: 'VT323', monospace;
-    margin-top: 350px;
-    font-size: 45px;
-
-}
-
 .instructions {
     text-align: center;
     font-family: 'VT323', monospace;
@@ -16,4 +8,143 @@
 
 .instructions h3 {
     margin-top: 30px;
+}
+
+.contact {
+    animation:blinker 1.5s linear infinite;
+}
+
+@keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
+
+.contact h4 {
+    text-align: center;
+    margin-top: 250px;
+    font-size: 40px;
+}
+
+.contact h4 a {
+    color: aliceblue;
+}
+
+.links h2{
+    text-align: center;
+    font-family: 'VT323', monospace;
+    margin-top: 60px;
+    font-size: 45px;
+}
+
+@media screen and (max-width : 1024px) {
+
+    .title {
+        margin-left: 80px;
+    }
+
+    .instructions {
+        margin-top: 50px;
+    }
+    .instructions h3 {
+        font-size: 25px;
+    }
+    
+    .contact {
+        margin-top: -180px;
+    }
+
+    .contact h4 {
+        font-size: 30px;
+    }
+}
+
+
+@media screen and (max-width : 768px) {
+
+    .title {
+        margin-left: 120px;
+    }
+
+    .instructions {
+        margin-top: 50px;
+    }
+    .instructions h3 {
+        font-size: 22px;
+    }
+    
+    .contact {
+        margin-top: -180px;
+    }
+
+    .contact h4 {
+        font-size: 30px;
+    }
+}
+
+
+@media screen and (max-width : 425px) {
+
+    .title {
+        margin-left: 50px;
+    }
+
+    .instructions {
+        margin-top: 50px;
+    }
+    .instructions h3 {
+        font-size: 22px;
+    }
+    
+    .contact {
+        margin-top: -180px;
+    }
+
+    .contact h4 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width : 375px) {
+
+    .title {
+        margin-left: 45px;
+    }
+
+    .instructions {
+        margin-top: 50px;
+    }
+    .instructions h3 {
+        font-size: 22px;
+    }
+    
+    .contact {
+        margin-top: -180px;
+    }
+
+    .contact h4 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width : 320px) {
+
+    .title {
+        margin-left: 10px;
+    }
+
+    .instructions {
+        margin-top: 50px;
+    }
+    .instructions h3 {
+        font-size: 22px;
+    }
+    
+    .contact {
+        margin-top: -180px;
+    }
+
+    .contact h4 {
+        font-size: 30px;
+    }
 }
