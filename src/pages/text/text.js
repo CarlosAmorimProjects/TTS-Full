@@ -3,7 +3,8 @@ import { BrowserRouter as Router, Link } from "react-router-dom";
 import api from "../../services/api";
 import ReactAudioPlayer from 'react-audio-player';
 import Button from 'react-bootstrap/Button';
-import { useAlert } from 'react-alert'
+import { useAlert } from 'react-alert';
+import "./normalize.css";
 import "./styles.css";
 
 import laptop from "../../images/backgroundgif.gif";
