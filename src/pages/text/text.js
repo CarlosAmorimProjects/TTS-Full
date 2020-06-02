@@ -60,7 +60,7 @@ import laptop from "../../images/backgroundgif.gif";
         {id: 'vi', name:'Vietnamese'},
         {id: 'cy', name:'Welsh'},
       ]
-      
+
 
 export default function Text ()  {
 

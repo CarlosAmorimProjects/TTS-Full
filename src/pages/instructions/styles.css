@@ -40,7 +40,7 @@
 @media screen and (max-width : 1024px) {
 
     .title {
-        margin-left: 120px;
+        margin-left: 140px;
     }
 
     .instructions {
@@ -63,7 +63,7 @@
 @media screen and (max-width : 768px) {
 
     .title {
-        margin-left: 150px;
+        margin-left: 170px;
     }
 
     .instructions {
@@ -137,7 +137,7 @@
         margin-top: 50px;
     }
     .instructions h3 {
-        font-size: 18px;
+        font-size: 16px;
     }
     
     .contact {
