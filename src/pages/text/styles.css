@@ -77,7 +77,7 @@ body {
     .title h1 {
         font-size: 20px;
         display: inline-block;
-        margin-left: 170px;
+        margin-left: 160px;
         margin-top: 50px;
         overflow: hidden;
     }
@@ -130,7 +130,7 @@ body {
     .title h1 {
         font-size: 20px;
         display: inline-block;
-        margin-left: 60px;
+        margin-left: 40px;
         margin-top: 50px;
         overflow: hidden;
     }
@@ -232,10 +232,11 @@ body {
 }
 
 @media screen and (max-width : 375px) {
+    
     .title h1 {
         font-size: 20px;
         display: inline-block;
-        margin-left: 2px;
+        margin-left: 0px;
         margin-top: 50px;
         overflow: hidden;
     }
