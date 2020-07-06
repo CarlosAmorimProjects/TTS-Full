@@ -1,7 +1,7 @@
 # TTS-Full Stack Web App
 Text-to-Speech web app. 
 
-https://tts-fullstack-app.herokuapp.com/instru
+https://tts-fullstack-app.herokuapp.com
 
 Translates text to speech (audio).
 Users enter text in text box, selects language the test is written, clicks translate,
